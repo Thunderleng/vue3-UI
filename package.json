@@ -17,8 +17,10 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,vue}": [
-      "echo 'begin'",
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.vue": [
       "eslint --fix"
     ]
   },
