@@ -14,7 +14,7 @@
     "version:snapshot": "changeset version --snapshot dev",
     "release": "changeset publish",
     "release:snapshot": "changeset publish --snapshot --no-git-tag --tag dev",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
