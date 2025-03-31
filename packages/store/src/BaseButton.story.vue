@@ -1,16 +1,16 @@
 <script setup>
 import { ref } from "vue";
 import { logEvent } from "histoire/client";
-import BaseButton from './BaseButton.vue'
+import { Button } from "@zencold/content";
 
 const text = ref("Click me");
 </script>
 
 <template>
   <Story>
-    <BaseButton @click="logEvent('click', $event)">
+    <Button @click="logEvent('click', $event)">
       {{ text }}
-    </BaseButton>
+    </Button>
 
     <template #controls>
       <HstText title="default slot" v-model="text" />

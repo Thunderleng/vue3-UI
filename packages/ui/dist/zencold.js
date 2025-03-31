@@ -6,7 +6,7 @@ const _ = (t, n) => {
   return o;
 }, a = {};
 function l(t, n) {
-  return r(), s("div", null, " 123123 ");
+  return r(), s("div", null, "123123");
 }
 const f = /* @__PURE__ */ _(a, [["render", l]]), u = [f], p = {
   install: (t) => u.forEach((n) => t.use(n))

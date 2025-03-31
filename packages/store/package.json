@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "histoire dev",
+    "dev": "histoire dev --port 5176",
     "story:build": "histoire build",
     "story:preview": "histoire preview"
   },
@@ -14,6 +14,7 @@
   "packageManager": "pnpm@10.6.3",
   "devDependencies": {
     "@histoire/plugin-vue": "1.0.0-alpha.2",
-    "histoire": "1.0.0-alpha.2"
+    "histoire": "1.0.0-alpha.2",
+    "@zencold/content": "workspace:*"
   }
 }
