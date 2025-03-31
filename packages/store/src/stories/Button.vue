@@ -1,6 +1,6 @@
 <template>
   <button type="button" :class="classes" @click="onClick" :style="style">
-    {{ label }}11
+    {{ label }}
   </button>
 </template>
 

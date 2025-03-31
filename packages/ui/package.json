@@ -1,18 +1,32 @@
 {
   "name": "@zencold/content",
+  "private": false,
   "version": "3.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "vite:dev": "vite",
-    "build": "vite build",
-    "vite:serve": "vite preview"
+  "main": "./dist/zencold.umd.cjs",
+  "module": "./dist/zencold.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zencold.js",
+      "require": "./dist/zencold.umd.cjs"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.6.3",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "uiDev": "vite dev --port 5175",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@storybook/test": "8.6.11",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue": "^3.2.47"
+  },
   "devDependencies": {
-    "typescript": "^4.4.4"
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^4.4.4",
+    "vite": "^4.2.0"
   }
 }
