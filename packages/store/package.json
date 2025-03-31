@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "histoire dev --port 5176",
     "story:build": "histoire build",
     "story:preview": "histoire preview",
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "keywords": [],
