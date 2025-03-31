@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "turbo dev",
+    "ui": "turbo uiDev",
     "build": "turbo build ",
     "lint": "turbo lint",
     "lint-staged": "lint-staged",

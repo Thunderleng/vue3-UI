@@ -6,9 +6,10 @@ import VueEslintParser from "vue-eslint-parser";
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
+  { ignores: ['**/dist/**'] },
   {
     languageOptions: {
-      globals: {...globals.browser, ...globals.es2022,... globals.node, ...globals.jest},
+      globals: { ...globals.browser, ...globals.es2022, ...globals.node, ...globals.jest },
     },
   },
   pluginJs.configs.recommended,
